@@ -161,12 +161,17 @@ body {
 h3{
     font-size: 24px;
     color: #3D4351;
+    margin: 0 0 20px;
+    margin-bottom: 20px;
 }
 .t{
     font-size: 15px;
     line-height: 29px;
     color: rgba(28,54,83,.6);
     padding-bottom: 20px;
+}
+.lista{
+    margin-top: 100px;
 }
 h5{
     font-size: 15px;
@@ -237,9 +242,131 @@ h5{
 .tercera .iphone-wrap{
     width: 304px;
     height: 620px;
-    background: url(../img/iphone6.png) center no-repeat;
+    background: url(../img/iphone6.png) center center no-repeat;
     position: absolute;
-    left: 370px;
-    bottom: -1290px;
-    
+    left: 530px;
+    bottom: 130px;  
 }
+.device-img {
+    position: absolute;
+    margin-top: 130px;
+    right: 61%;
+}
+.cuarto{
+    background: white;
+    position: relative;
+    margin-top: -20px;
+    padding: 120px 0;
+    overflow: hidden;
+}
+.l{
+    padding: 8px 40px;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.z{
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28,54,83,.6);
+    padding-bottom: 20px;
+}
+ .cuarto .laptop{
+    position: absolute;
+    width: 916px;
+    height: 540px;
+    background: url(../img/macbook-pro.png) center center no-repeat;
+    top: 114px;
+    left: 50%;
+}
+.feature-list{
+    padding-left: 60px;
+}
+.quinta{
+    margin-top: 120px;
+    background: url(../img/polygonal-bg.jpg) center center no-repeat #333844;
+    padding-bottom: 190px;
+    position: relative;
+}
+h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 0 20px;
+    padding-top: 10%;
+    text-align: center;
+}
+.version{
+    font-family: Nunito,sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #F69D52;
+    vertical-align: top;
+    margin-left: -8px;
+    font-style: normal;
+}
+.c{
+    color: #ACB1B4;
+    text-align: center;font-size: 15px;
+    line-height: 29px;
+    padding-bottom: 20px;}
+.w{
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 40px;
+}
+
+.logod{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    bottom: -95px;
+    left: 42%;
+    animation: sube-y-baja 3s alternate infinite;
+}
+
+@keyframes sube-y-baja {
+    0% {
+        transform: translateY(0);
+    }
+    34% {
+        transform: translateY(-10px);
+    }
+    68% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);        
+    }
+}
+.texto center{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.center{
+    text-align: center;
+}
+.izquierdo{
+    padding-right: 100px;
+    border-right: solid 1px #E6E9EA;
+}
+.col-md-12 h3{
+    margin-bottom: 70px;
+}
+.izquierdo h5{
+    font-size: 15px;
+    color: #3D4351;
+}
+.col m6 col s12 derecho{
+    padding-left: 100px;
+}
+.la{
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28,54,83,.6);
+    padding-bottom: 20px;
+}
+
