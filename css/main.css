@@ -134,7 +134,7 @@ body {
     height: 750px;
 }
 .img{
-    width: 12%;
+    width: 11%;
     align-self: flex-start;
     margin-right: 16px;
 }
@@ -149,9 +149,9 @@ body {
     padding-bottom: 20px;
 }
 .textos{
-    margin-top: 100px;
-    padding: 0 150px;
+    padding: 120px 80px;
 }
+
 .columna{
     display: flex;
 }
@@ -288,7 +288,7 @@ h5{
     padding-bottom: 190px;
     position: relative;
 }
-h2{
+.i{
     font-size: 40px;
     font-weight: 300;
     color: #fff;
@@ -350,8 +350,9 @@ h2{
     text-align: center;
 }
 .izquierdo{
-    padding-right: 100px;
+    padding-right: 100px !important;
     border-right: solid 1px #E6E9EA;
+   
 }
 .col-md-12 h3{
     margin-bottom: 70px;
@@ -360,8 +361,8 @@ h2{
     font-size: 15px;
     color: #3D4351;
 }
-.col m6 col s12 derecho{
-    padding-left: 100px;
+.derecho{
+    padding-left: 100px !important;
 }
 .la{
     font-size: 15px;
@@ -369,4 +370,82 @@ h2{
     color: rgba(28,54,83,.6);
     padding-bottom: 20px;
 }
+.derecho{
+    padding-left: 100px;
+}    
+.q{
+    margin-bottom: 70px;
+}.o{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.dostexto{
+    background: #F3F4F8;
+    padding: 180px 80px;
+    padding-bottom: 100px;
+}
+.galeria{
+    background: #F3F4F8;
+}
+.center{
+    margin: 0;
+}
+.center a{
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 35px;
+    color: #FF5274;
+    text-align: center;
 
+}
+.paga{
+    text-align: center !important;
+    margin: 0 !important;
+}
+.paga a{
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28,54,83,.6);
+    
+}
+.b{
+    padding: 8px 40px;
+    text-transform: uppercase;
+}
+.photo {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo .mask {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255,255,255,.5);
+    position: absolute;
+    transition: .4s;
+    opacity: 0;
+}
+.xxxx{
+    margin-top: 55px;
+    text-align: center;
+    font-size: 13px;
+}
+.photo .mask img {
+    width: 10px;
+}
+.photo .responsive-img {
+    transition: .3s;
+}
+.photo:hover .responsive-img{
+    transform: scale(1.1)
+}
+.photo:hover .mask{
+    opacity: 1;
+}
