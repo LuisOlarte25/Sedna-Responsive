@@ -6,6 +6,16 @@ body {
     transition: .4s;
     font-size: 13px;
   }
+  input {
+    box-shadow: none !important;
+    border: 0 !important;
+    transition: 0 !important;
+  }
+  input:focus {
+    border:1px solid #4D90FE !important;
+    -webkit-box-shadow: 0px 0px 3px  #4D90FE !important;
+    box-shadow: 0px 0px 3px  #4D90FE !important;
+  }
   .my-awesome-navbar ul li a:hover, .log:hover {
     color: #FF5274;
     background: transparent;
@@ -105,7 +115,7 @@ body {
     } 
  .icono{
     position: absolute;
-    animation: sube-y-baja 3s alternate infinite;
+    animation: sube-y-baja 3s linear infinite;
     bottom: 20px;
     color: white;
 }
@@ -351,7 +361,7 @@ h5{
 }
 .izquierdo{
     padding-right: 100px !important;
-    border-right: solid 1px #E6E9EA;
+     border-right: solid 1px #E6E9EA;
    
 }
 .col-md-12 h3{
@@ -386,7 +396,107 @@ h5{
 }
 .galeria{
     background: #F3F4F8;
+    padding-bottom: 120px;
+
 }
+.light-box1{
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.432);
+}
+.light-box1 .over{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: solid 5px white;
+    border-radius: 1%;
+}
+.light-box1 .cerrar{
+    z-index: 2;
+    position: absolute;
+    top: -13px;
+    right: -14px;
+    margin: auto;
+    float: left;
+    width: 30px;
+}
+.light-box2{
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.432);
+}
+.light-box2 .over{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: solid 5px white;
+    border-radius: 1%;
+}
+.light-box2 .cerrar2{
+    z-index: 2;
+    position: absolute;
+    top: -13px;
+    right: -14px;
+    margin: auto;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+.light-box3{
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.432);
+}
+.light-box3 .over{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: solid 5px white;
+    border-radius: 1%;
+}
+.light-box3 .cerrar3{
+    z-index: 2;
+    position: absolute;
+    top: -13px;
+    right: -14px;
+    margin: auto;
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+.light-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 543px;
+    height: 310px;
+}
+
+
 .center{
     margin: 0;
 }
@@ -439,6 +549,13 @@ h5{
 }
 .photo .mask img {
     width: 10px;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 25px;
+    right: 35px;
 }
 .photo .responsive-img {
     transition: .3s;
@@ -448,4 +565,274 @@ h5{
 }
 .photo:hover .mask{
     opacity: 1;
+}
+.clase6 .row .col{
+    padding-left: 0;
+    padding-right: 0;
+}
+.carousel.carousel-slider .carousel-item{
+    padding: 100px 0;
+}
+.clase6{
+    background: url(../img/slider.jpg) center center no-repeat #333844;
+}
+.imgslide1,.imgslide2, .imgslide3{
+    width: 82px;
+    height: 82px;
+    margin: 0 auto;  
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #fff
+
+}
+.imgslide1{
+    background: url(../img/avatar.jpg);
+    background-size: cover;
+}
+.imgslide2{
+    background: url(../img/mani.jpg);
+    background-size: cover;
+}
+.imgslide3{
+    background: url(../img/130.jpg);
+    background-size: cover;
+}
+.y{
+    height:500px;
+}
+
+.arrowright i, .arrowleft i{
+    color: rgba(255,255,255,1)
+}
+.arrowright,.arrowleft{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.arrowleft{
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 0;
+    transform: translateX(-80px);
+}
+.arrowright{
+    right: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 0;
+    transform: translateX(80px);
+}
+.carousel:hover .arrowright, .carousel:hover .arrowleft{
+    opacity: 1;
+    transform: translateX(0);
+}
+.carousel.carousel-slider .carousel-item h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 30px 0;
+}
+.grey-text.text-lighten-3{
+    color: #ACB1B4 !important;
+    letter-spacing: 2px;
+}
+.carousel .indicators .indicator-item.active{
+    background: rgba(255,255,255,0);
+    border: 2px solid #fff;
+    cursor: default;
+    line-height: 1.2;
+    width: 12px;
+    height: 12px;
+}
+.carousel .indicators .indicator-item{
+    width: 12px;
+    height: 12px;
+    background: #5C5F6A;
+    background: rgba(92,95,106,1);
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.introduccion8{
+    text-align: center;
+}
+.pa{
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28,54,83,.6);
+    padding-bottom: 20px;
+}
+.introduccion8 .formu{
+    width: 73%;
+    height: 55px;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+    border: 1px solid #E6E9EA;
+    text-align: left;
+    position: relative;
+}
+.introduccion8 .material-icons{
+    font-size: 17px;
+    position: absolute;
+    top: 35%;
+    color: #FF5274;
+    margin-left: 20px;
+    border-right: 1px solid #E6E9EA;
+    padding-right: 10px;
+}
+.introduccion8 .formu .email{
+    padding-left: 68px;
+    width: 85%;
+    height: 100%;
+    border-radius: 6px;
+    border: none; 
+}
+.introduccion8 .formu .validate{
+    padding-left: 68px;
+    width: 85%;
+    height: 100%;
+    border-radius: 6px;
+}
+.sign-up .signup-form .form-input-group i {
+    color: #FF5274;
+
+}.introduccion8 .row{
+    padding-top: 100px;
+
+
+}
+.introduccion8 .btn-fill {
+    padding: 16px 0;
+    width: 80%;
+    font-size: 14px;
+    color: #fff;
+    background-color: #FF5274;
+    border-radius: 6px;
+    border: none;
+    
+}
+.introduccion8 .btn-fill:hover {
+    background-color: #D7405D;  
+}
+.bt4{
+    width: 91%;
+    display: inline-block;
+    margin: auto;
+}
+.intro-nueve{
+    height: 60px;
+    background-color: #495061;
+}
+.intro-nueve .row, footer{
+    position: relative;
+}
+.intro-nueve .btn2{
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    margin-top: -120px;
+}
+.intro-nueve .btn2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,.15);
+    margin-top: 121px;
+}
+.intro-nueve .btn2 i{
+    font-size: 30px;
+    line-height: 55px;
+}
+.j{
+    padding-bottom: 120px;
+}
+footer {
+    background-color: #3D4351;
+}
+footer .links {
+    margin: 120px 0;
+}
+footer ul.group-link {
+    border-top: solid 1px #4E566C;
+    padding-top: 25px;
+    margin-bottom: 45px;
+}
+footer ul.group-link li {
+    display: inline-block;
+    margin-right: 30px;
+}
+footer ul.group-link li a {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+footer p{
+color: #ACB1B4;
+font-size: 13px;
+}
+footer a {
+    color: #fff;
+}
+.ol.material-icons{
+    color: #ff415c;
+    font-size: 15px;
+    margin: 0 2px;
+}
+footer .social{
+    position: absolute;
+    background-color: #373D4A;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    padding: 142px 0 0 70px;
+}
+footer .social p {
+    color: #fff;
+    padding-bottom: 10px;
+}
+footer .social a.twitter {
+    background-color: #1AB4EF;
+    margin-right: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 3px;
+    font-size: 22px;
+    text-align: center;
+    display: inline-block;
+}
+footer .social a.facebook {
+    background-color: #3B5898;
+    height: 60px;
+    width: 60px;
+    border-radius: 3px;
+    font-size: 22px;
+    text-align: center;
+    display: inline-block;
+}
+footer img{
+    width: 20px;
+    margin-top: 20px;
+}
+.ol.material-icons{
+    color: #ff415c;
+    font-size: 13px;
+    margin: 0 2px;
+    display: inline-block;
+    animation: latidos 1s infinite;
+    transform-origin: center;
+}
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
 }

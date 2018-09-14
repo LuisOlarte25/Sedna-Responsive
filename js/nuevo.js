@@ -1,9 +1,49 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.materialboxed')
+  var elements = document.querySelectorAll('.materialboxed')
   var options = {
       inDuration: 400
   }
-  var instances = M.Materialbox.init(elems, options)
+  var instancia = M.Materialbox.init(elements, options)
+
+    var elems = document.querySelectorAll('.carousel')
+   
+    var arrowright = document.querySelector('.arrowright')
+    var arrowleft = document.querySelector('.arrowleft')
+    var instances = M.Carousel.init(elems, {
+      fullWidth: true,
+      indicators: true
+    })
+    
+    arrowright.addEventListener('click', () => {
+      var instances = M.Carousel.getInstance(elems[0])
+      instances.next()
+    })
+    arrowleft.addEventListener('click', () => {
+      var instances = M.Carousel.getInstance(elems[0])
+      instances.prev()
+    })  
+})
+
+$('.light-box1').hide();
+$('#open1').click(function(){
+    $('.light-box1').show();
+})
+$('#close1').click(function(){
+    $('.light-box1').hide();
+})
+$('.light-box2').hide();
+$('#open2').click(function(){
+    $('.light-box2').show();
+})
+$('#close2').click(function(){
+    $('.light-box2').hide();
+})
+$('.light-box3').hide();
+$('#open3').click(function(){
+    $('.light-box3').show();
+})
+$('#close3').click(function(){
+    $('.light-box3').hide();
 })
 
 let nav = document.querySelector('nav')
