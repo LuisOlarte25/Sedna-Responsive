@@ -249,6 +249,7 @@ h5{
     background: url(../img/ipad-device.png) center no-repeat;
     z-index: 1;
 }
+
 .tercera .iphone-wrap{
     width: 304px;
     height: 620px;
@@ -541,6 +542,7 @@ h5{
     position: absolute;
     transition: .4s;
     opacity: 0;
+    cursor: pointer;
 }
 .xxxx{
     margin-top: 55px;
@@ -836,3 +838,12 @@ footer img{
     50% { transform: scale(1.4); }
     to { transform: none; }
 }
+
+
+
+
+
+
+
+
+

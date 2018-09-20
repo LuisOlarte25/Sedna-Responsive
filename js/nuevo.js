@@ -1,5 +1,8 @@
+AOS.init();
 document.addEventListener('DOMContentLoaded', function() {
   var elements = document.querySelectorAll('.materialboxed')
+  var elems = document.querySelectorAll('.tooltipped');
+  var instances = M.Tooltip.init(elems, options);
   var options = {
       inDuration: 400
   }

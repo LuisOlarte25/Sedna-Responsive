@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Pagina Responsive</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="imge/png" href="img/favicon.png" sizes="16x16">
 </head>
 <body> 
   <div class="fijo">
@@ -109,8 +111,8 @@
     </div>
     <div class="device-img">
       <div class="devices">
-        <div class="ipad-wrap" ></div>
-        <div class="iphone-wrap"></div>
+        <div data-aos="fade-up" data-aos-duration="500" class="ipad-wrap " ></div>
+        <div data-aos="fade-up" data-aos-duration="500" class="iphone-wrap"></div>
       </div>
     </div>
   </div> 
@@ -128,7 +130,7 @@
             <a class="bt3 l">WHAT'S SKETCH?</a> 
           </div>
          </div>
-        <div class="laptop"></div>
+        <div data-aos="fade-left" data-aos-duration="1000" class="laptop"></div>
     </div>
   </div>
 </section>
@@ -183,11 +185,11 @@
         </div>
         <div class="photo">
           <img class="responsive-img" src="img/blog-img-01.jpg" >
-          <div class="mask">
-           <a href="#blog"><img class="lupa" id="open1" src="img/search.png"></a>
+          <a href="#blog"><div class="mask" id="open1"></a>
+           <a href="#blog"><img class="lupa"  src="img/search.png"></a>
           </div>
         </div>
-        <h2 class="center"><a href="#">PRODUCT</a></h2>
+        <h2 class="center"><a href="#" class="tooltipped" data-position="top" data-tooltip="I am a tooltip">PRODUCT</a></h2>
         <p class="paga"><a href="#">Getting started with Sedna ></a></p>
       </div> 
       <div class="col m12 l4 conte">
@@ -199,11 +201,11 @@
                 </div>
              </div>
           <img class="responsive-img" src="img/blog-img-02.jpg" >
-          <div class="mask">
-              <a href="#blog"><img class="lupa" id="open2" src="img/search.png"></a>
+          <a href="#blog"><div class="mask" id="open2"></a>
+              <a href="#blog"><img class="lupa"  src="img/search.png"></a>
           </div>
         </div>
-        <h2 class="center"><a href="#">TECHNOLOGY</a></h2>
+        <h2 class="center"><a href="#" class="tooltipped" data-position="top" data-tooltip="I am a tooltip">TECHNOLOGY</a></h2>
         <p class="paga"><a href="#">Why IE8 support is deminishing</a></p>
       </div>
       <div class="col m12 l4 conte">
@@ -215,11 +217,11 @@
                 </div>
              </div>
           <img class="responsive-img" src="img/blog-img-03.jpg" >
-          <div class="mask">
-              <a href="#blog"><img class="lupa" id="open3" src="img/search.png"></a>
+          <a href="#blog"><div class="mask" id="open3"></a>
+              <a href="#blog"><img class="lupa"  src="img/search.png"></a>
           </div>
         </div>
-        <h2 class="center"><a href="#">PRODUCT</a></h2>
+        <h2 class="center"><a href="#" class="tooltipped" data-position="top" data-tooltip="I am a tooltip">PRODUCT</a></h2>
         <p class="paga"><a href="#">Sedna tutorial: How to begin your ></a></p>
       </div>
     </div>
@@ -285,7 +287,7 @@
   <div class="container">
    <div class="row">
       <div class="btn2">
-        <a href="#top" class="top">
+        <a href="#top" class="top"id="boton-subir">
           <i class=" a material-icons">expand_less</i> 
         </a>
       </div>
@@ -349,6 +351,7 @@
   </div>
 </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/nuevo.js"></script>
